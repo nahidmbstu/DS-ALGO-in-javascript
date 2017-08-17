@@ -53,7 +53,7 @@
 		</tr>
 
 		<tr>
-			<!-- <td><input class="form-control" id="imageBase64" type="text" value="hello" name=""></td> -->
+			
 		</tr>
 		
 		<tr>
