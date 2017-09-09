@@ -10,7 +10,7 @@
 
           
 
-            $(function() // this function excited if the jquery is ready i mean after jquery successfully loaded
+            $(function() // this function excited if the jquery is ready after jquery successfully loaded
             {
                 function loaddata()
                 {
@@ -21,7 +21,7 @@
                         type: "GET",
                         url: "query.php",
                         data: {
-                            name:moviename // there is no variable name so you have to assign the moveiname to name vairable ;
+                            name:moviename // there is no variable name assign the moveiname to name vairable ;
                         },
                         success: function (data) {
                            $("#result").html(data);
@@ -51,7 +51,7 @@
         <form action="" method="POST">
             <input type="text" name="moviename" id="moviename" placeholder="Enter Movie Name">
             <input type="submit" name="submit" id="submit" value="Search"/>
-            <!-- if you want ot use jquery you have to use event listener. like $("#submit").click(function(event){}); code from line 31 to 35 -->
+            
         </form>
         <br>
        
