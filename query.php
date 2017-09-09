@@ -2,16 +2,25 @@
 
 include 'dbcon.php';
 
-if (isset($_GET['name'])) {
+if (isset($_POST['name'])) {
 
-    $name = $_GET['name'];
-	
-// $name =isset($_GET['name'])?$_GET['name']:'';
+    $name = $_POST['name'];
+
+    if (!empty($name)) {
 
 
-$query = mysqli_query( $conn,"SELECT * FROM movie WHERE name = '$name'");
+   $query = mysqli_query( $conn,"SELECT * FROM movie WHERE name = '$name'");
 
-while($row = mysqli_fetch_array($query))
+   $num_rows = mysqli_num_rows($query);
+
+   if($num_rows==0)
+{
+   echo "No Match Found";
+}
+else
+{
+
+	while($row = mysqli_fetch_array($query))
 {
     echo "<p>".$row['name']."</p>";
     echo "<p>".$row['year']."</p>";
@@ -19,4 +28,15 @@ while($row = mysqli_fetch_array($query))
 
 }
 
+}
+	
+else 
+
+{
+	echo "Please Enter A Movie Name";
+}
+
+}
+
 ?>
+
