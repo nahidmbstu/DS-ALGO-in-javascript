@@ -24,7 +24,7 @@
                             name:moviename // there is no variable name so you have to assign the moveiname to name vairable ;
                         },
                         success: function (data) {
-                           $("#result").html(data);
+                           $("#result").html(JSON.stringify(data));
 
                         }
 
