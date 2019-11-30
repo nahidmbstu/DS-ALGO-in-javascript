@@ -1,8 +1,6 @@
-function greatestCommonDivisor(a, b){
-   if(b == 0)
-     return a;
-   else 
-     return greatestCommonDivisor(b, a%b);
+function greatestCommonDivisor(a, b) {
+  if (b == 0) return a;
+  else return greatestCommonDivisor(b, a % b);
 }
 
-console.log(greatestCommonDivisor(24, 36))
+console.log(greatestCommonDivisor(24, 36));
