@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
   var row = 5;
 
   for (
@@ -11,7 +11,7 @@
       j <= row - i;
       j++ /// 2nd loop is for giving spaces
     ) {
-      document.write("&nbsp");
+      console.log("&nbsp");
     }
 
     for (
@@ -19,11 +19,8 @@
       k <= i;
       k++ /// 3rd loop is for display what you want to display like * ,1 , anything
     ) {
-      document.write("*");
+      console.log("*");
     }
 
-    document.write("<br>");
+    console.log("<br>");
   }
-</script>
-
-<div id="print"></div>
