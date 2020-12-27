@@ -3,4 +3,4 @@ function greatestCommonDivisor(a, b) {
   else return greatestCommonDivisor(b, a % b);
 }
 
-console.log(greatestCommonDivisor(24, 36));
+console.log(greatestCommonDivisor(36, 24));
