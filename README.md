@@ -1,1 +1,1 @@
-#solving different DS and Algorithm problem in JS. 
+#solving different DS and Algorithm problem in JS and Python. 
